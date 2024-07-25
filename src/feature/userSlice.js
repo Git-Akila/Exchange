@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-// Async thunk to fetch user data
+
 export const fetchUserData = createAsyncThunk(
   "users/fetchUserData",
   async () => {
@@ -13,7 +13,7 @@ export const fetchUserData = createAsyncThunk(
         password: "securepassword",
       }
     );
-    return response.data.data; // Adjust based on actual response structure
+    return response.data.data; 
   }
 );
 
@@ -25,7 +25,7 @@ const userSlice = createSlice({
     filteredDataInactive: [],
     filteredDataVerified: [],
     filteredDataUnverified: [],
-    status: "idle", // 'idle' | 'loading' | 'succeeded' | 'failed'
+    status: "idle", 
     error: null,
     filter: "all",
     emailFilter: "all",

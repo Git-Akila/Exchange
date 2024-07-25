@@ -156,7 +156,7 @@ function Navbar() {
       <div className="p-7  flex-1">
         <div className="grid grid-cols-1 xs:grid-cols-4 md:grid-cols-4 gap-4 ">
           <Grid1 filter={filter} setFilter={setFilter} emailFilter={emailFilter} setEmailFilter={setEmailFilter} />
-          {/* <Grid2 />  */}
+        
           <Grid3 />
           <Grid4 />
         </div>
